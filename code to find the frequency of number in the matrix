@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int r, c,i,n ,j,count=0,fnumber;
+     int m[100][100] ;
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &r, &c);
+    printf("\nEnter matrix elements:\n");
+    for (int i = 0; i < r; ++i) {
+        for (int j = 0; j < c; ++j) {
+            printf("Enter element a%d%d: ", i + 1, j + 1);
+            scanf("%d", &m[i][j]); }}
+            printf(" enter number to find its frequency:-\t");
+            scanf("%d",&fnumber);
+            for (i=0;i<r;i++){
+                for(j=0;j<c;j++){
+                    if(m[i][j]==fnumber)
+                    {count++;
+                }
+            }
+            }
+            printf("frequency of given number in matrix -: %d\n",count);
+            
+            return 0;
