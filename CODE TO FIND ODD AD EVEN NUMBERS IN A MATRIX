@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a[10][10];
+    int r,c,i,j,oddsum=0,evensum=0;
+    printf("enter order of matrix");
+    scanf("%d %d",&r,&c);
+    printf("enter matrix\n");
+    for(i=0;i<r;i++)
+    {
+     for(j=0;j<c;j++)
+      { printf("Enter element a%d%d: ", i + 1, j + 1);
+          scanf("%d",&a[i][j]);
+      }
+    }
+    for(i=0;i<r;i++){
+     for(j=0;j<c;j++)
+     { 
+         if  (a[i][j]%2==0) 
+         {
+             evensum++;
+         }
+       else {
+           oddsum++;
+       }
+     }
+ } 
+     printf ("The no of even number %d \t \n",evensum); 
+     printf ("The no of odd number %d \t ",oddsum); 
+       
+    return 0;
+}
+       
+         
+         
